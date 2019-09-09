@@ -19,7 +19,7 @@ body {
     color: #000000;
   
     background-color: #f9f6f3;
-    background-image: url("img/pattern-light.jpg");
+    background-image: url("../img/pattern-light.png");
     background-position: 0 0;
     background-repeat: repeat;
   }
@@ -88,7 +88,7 @@ body {
     color: #000000;
   
     background-color: #f8f5f2;
-    background-image: url("img/pattern-light.jpg");
+    background-image: url("../img/pattern-light.png");
     background-position: 0 0;
     background-repeat: repeat;
   }
@@ -275,7 +275,7 @@ body {
     color: #ffffff;
   
     background-color: #212121;
-    background-image: url("img/pattern-dark.jpg");
+    background-image: url("../img/pattern-dark.png");
     background-position: 0 0;
     background-repeat: repeat;
   }
@@ -317,7 +317,7 @@ body {
     color: #000000;
   
     background-color: #f8f3f0;
-    background-image: url("img/pattern-light.jpg");
+    background-image: url("../img/pattern-light.png");
     background-position: 0 0;
     background-repeat: repeat;
   }
