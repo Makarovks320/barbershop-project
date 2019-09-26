@@ -834,6 +834,36 @@ opacity: 1;
   margin-left: -230px;
   padding: 50px 80px;
 }
+
+.modal-map {
+  top:50%;
+  left: 50%;
+
+  display: none;
+
+  width: 766px;
+  height: 561px;
+
+  margin-top: -280px;
+  margin-left: -390px;
+  
+  border: 7px solid white;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.overlay-show {
+  display: block;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-close {
   position: absolute;
   top: 0;
@@ -992,24 +1022,18 @@ opacity: 1;
   margin-right: 0;
 }
 
-.modal-map {
-  top:50%;
-  left: 50%;
-
-  display: none;
-
-  width: 766px;
-  height: 561px;
-
-  margin-top: -280px;
-  margin-left: -390px;
-  
-  border: 7px solid white;
-}
 .modal-map p {
+  position: absolute;
+  top: 0;
   margin: 0;
+  z-index: 1;
 }
 
+.modal-map iframe {
+  border: none;
+  position: relative;
+  z-index: 2;
+}
 /* Прайс-лист*/
 .inner-content {
   margin-top: 60px;
@@ -1131,6 +1155,45 @@ opacity: 1;
   padding-right: 80px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 .main-footer {
   margin-top: 65px;
   padding: 60px 0;

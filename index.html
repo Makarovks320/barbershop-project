@@ -110,7 +110,7 @@
                 <br> пн—пт: с 10:00 до 22:00
                 <br> сб—вс: с 10:00 до 19:00
             </p>
-            <a class="button" href="map.html">Как проехать</a>
+            <a class="button jsMapLink" href="map.html">Как проехать</a>
             <a class="button" href="contacts.html">Обратная связь</a>
         </section>
 
@@ -120,19 +120,19 @@
             <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="appointment-item">
                     <label for="appointment-date">Дата</label>
-                    <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+                    <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017" required>
                 </p>
                 <p class="appointment-item">
                     <label for="appointment-time">Время</label>
-                    <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                    <input id="appointment-time" type="text" name="time" value="" placeholder="10:00" required>
                 </p>
                 <p class="appointment-item">
                     <label for="appointment-name">Ваше имя</label>
-                    <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+                    <input id="appointment-name" type="text" name="name" value="" placeholder="Борода" required>
                 </p>
                 <p class="appointment-item">
                     <label for="appointment-phone">Телефон</label>
-                    <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+                    <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90" required>
                 </p>
                 <button class="button" type="submit">Отправить</button>
             </form>
@@ -218,11 +218,17 @@
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002767!2d30.
+        320858715634905!3d59.938719169054735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469
+        6310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4
+        sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v15695365072
+        16!5m2!1sru!2sru" width="766" height="560" frameborder="0" allowfullscreen=""></iframe>
         <p><img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
     <div class="modal-overlay"></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
