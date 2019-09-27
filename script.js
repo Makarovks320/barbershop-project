@@ -65,17 +65,20 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
-
-var mapLink = document.querySelector('.jsMapLink');
+var mapLinks = document.querySelectorAll('.jsMapLink');
+// var mapLink = document.querySelector('.jsMapLink');
 
 var mapPopup = document.querySelector('.modal-map');
 var mapClose = mapPopup.querySelector('.modal-close');
 
-mapLink.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add('modal-show');
-  overlay.classList.add('overlay-show');
-});
+for (var i = 0; i < mapLinks.length; i++) {
+  mapLinks[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add('modal-show');
+    overlay.classList.add('overlay-show');
+  });
+}
+
 
 mapClose.addEventListener('click', function (evt) {
   evt.preventDefault();
