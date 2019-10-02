@@ -66,7 +66,6 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 var mapLinks = document.querySelectorAll('.jsMapLink');
-// var mapLink = document.querySelector('.jsMapLink');
 
 var mapPopup = document.querySelector('.modal-map');
 var mapClose = mapPopup.querySelector('.modal-close');
